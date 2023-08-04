@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Sign Up</h3>
+
+    <form action="/start" method="post">
+    {%csrf_token %}
+
+        <label for="">Username</label>
+        <input type="text" id ="username" name="username" 
+        placeholder="Create a username" required><br><br>
+
+        <label for="">Email</label>
+        <input type="text" id ="email" name="email" 
+        placeholder="Enter the Email" required><br><br>
+
+        <label for="">Password</label>
+        <input type="text" id ="pass1" name="pass1" 
+        placeholder="Enter the Password" required><br><br>
+
+        <button type="submit">SIGNUP</button>
+
+    </form>
+</body>
+</html>
